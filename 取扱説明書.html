@@ -14,102 +14,101 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans GB', 'Noto Sans JP', 'Meiryo', sans-serif;
-            background: #f5f5f5;
-            min-height: 100vh;
-            padding: 40px 20px;
-            color: #333;
+            background: white;
+            color: #000;
+            font-size: 12pt;
+            line-height: 1.7;
         }
 
         .container {
-            max-width: 900px;
-            margin: 0 auto;
+            max-width: 100%;
+            padding: 40px 50px;
         }
 
-        .header {
-            text-align: center;
+        .title {
+            font-size: 13pt;
+            font-weight: bold;
             margin-bottom: 40px;
-            color: #333;
+            text-align: center;
         }
 
-        .header h1 {
-            font-size: 2.2rem;
-            margin-bottom: 10px;
+        .section {
+            margin-bottom: 35px;
         }
 
-        .page-card {
-            background: white;
-            border-radius: 8px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .page-number {
-            display: inline-block;
-            background: #333;
-            color: white;
-            padding: 8px 20px;
-            border-radius: 4px;
+        .section-title {
+            font-size: 13pt;
             font-weight: bold;
             margin-bottom: 20px;
-        }
-
-        .page-image {
-            width: 100%;
-            border-radius: 4px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-
-        .page-content {
             line-height: 1.8;
-            font-size: 1rem;
-            color: #444;
-            white-space: pre-wrap;
+            border-top: 2px solid #000;
+            padding-top: 15px;
         }
 
-        .page-content h2 {
-            color: #333;
-            font-size: 1.3rem;
-            margin: 20px 0 15px 0;
-            padding-bottom: 8px;
-            border-bottom: 1px solid #ddd;
-            margin-top: 0;
+        .section-title::before {
+            content: '■ ';
+            margin-right: 5px;
         }
 
-        .page-content ol {
-            margin-left: 25px;
+        .content-line {
+            margin-bottom: 10px;
+            line-height: 1.7;
+            font-size: 12pt;
+        }
+
+        .url-line {
+            margin-bottom: 15px;
+            color: #000080;
+            word-break: break-all;
+            font-size: 12pt;
+        }
+
+        .image-display {
+            width: 100%;
+            margin: 20px 0;
+            display: block;
+        }
+
+        .small-image {
+            width: auto;
+            max-width: 300px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .bullet-point {
+            margin-bottom: 10px;
+            line-height: 1.7;
+            font-size: 12pt;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .bullet-point::before {
+            content: '・';
+            position: absolute;
+            left: 0;
+        }
+
+        .contact-text {
+            font-size: 12pt;
+            line-height: 1.7;
             margin-bottom: 15px;
         }
 
-        .page-content li {
-            margin-bottom: 12px;
-            padding-left: 10px;
-        }
-
-        .page-content ul {
-            margin-left: 25px;
-            margin-bottom: 15px;
-            list-style-type: disc;
-        }
-
-        .page-content ul li {
-            margin-bottom: 8px;
-        }
-
-        .page-content a {
-            color: #333;
+        .contact-email {
+            color: #000080;
             text-decoration: underline;
             word-break: break-all;
         }
 
-        @media (max-width: 600px) {
-            .header h1 {
-                font-size: 1.5rem;
+        @media print {
+            body {
+                padding: 0;
             }
 
-            .page-card {
-                padding: 20px;
+            .container {
+                padding: 40px;
             }
         }
     </style>
@@ -117,61 +116,48 @@
 
 <body>
     <div class="container">
-        <div class="header">
-            <h1>🐾🌈ホログラムペットボックス🌈🐾</h1>
-            <p>取扱説明書</p>
-        </div>
-        <div class="page-card"> <img src="pdf_images/123123123123.png" alt="ページ1" class="page-image">
-            <div class="page-content">
-                <h2>使いかた </h2> ■ 使いかた ① 反射板の保護フィルムを剥がし、45°の角度でボックス内にセットしてください（下図をご参照ください）。 ② Google
-                Chromeブラウザで、下記のURLにアクセスしてください。 <a href="https://petmanage.paoxiaokeji.com/petApp"
-                    target="_blank">https://petmanage.paoxiaokeji.com/petApp</a> ③ ログイン後、画面の案内に従って基本情報を入力し、登録を完了してください。
-                ④ 「ホログラム投影」をタップします。 ⑤ アクティベーションコードを入力してください。 ⑥ 「プレビュー画像生成」をタップします。 ⑦
-                「生成」をタップし、表示される案内に従って、お好みのペットの写真を選んでください。 ⑧ 生成が完了しましたら、スマートフォンの画面を下にして、ボックス上部に設置してください。 自動的に投影が開始されます。
-            </div>
-        </div>
-        <div class="page-card">
-            <p class="page-number">ご注意ください</span>
-            <div class="page-content">
-                <span>・すべての機能をお楽しみいただくには、マイクおよびモーションセンサーをオンにしてください。</span>
-                <span>・星空カードが1枚付属しており、投影時の背景としてご使用いただけます。ボックス内に設置してご利用ください。
-                </span>
-            </div>
-        </div>
-        <div class="page-card">
-            <p class="page-number">アクティベーションコードについて</span>
-            <div class="page-content">
-                <span>・1つのコードにつき、登録できるペットは1匹です。</span>
-                <span>・複数のペットを同時に投影する場合は、追加のアクティベーションコードをご用意ください。
-                </span>
-            </div>
-        </div>
-        <div class="page-card"> <span class="page-number">図の説明</span>
-            <div class="page-content">
-                <p style="display: flex;
-    flex-direction: column;"><span>・反射板の設置角度（45°に傾けてください）</span>
-                    <img src="./pdf_images/2345345345.png" style="margin-bottom:10px;width: 130px;height: auto;" alt="">
+        <div class="title">ホログラムペットボックス 取扱説明書</div>
 
-                </p>
-                <p style="display: flex;
-    flex-direction: column;"><span>・タッチ操作エリア</span>
-                    <img src="./pdf_images/243234234.png" style="margin-bottom:10px;width: 130px;height: auto;" alt="">
+        <img src="pdf_images/123123123123.png" alt="" class="image-display">
 
-                </p>
-                <p style="display: flex;
-    flex-direction: column;"><span>・投影するとこんな感じ</span>
-                    <img src="./pdf_images/5555555.png" style="margin-bottom:10px;width: 130px;height: auto;" alt="">
-                </p>
-                <p style="display: flex;
-    flex-direction: column;">
-                    <span style="color: rgb(128, 128, 221);">ご不明な点がございましたら、下記のメールアドレスまでお問い合わせください。<a
-                            style="color: #000;"
-                            href="mailto:jiuwanliyun@outlook.com">jiuwanliyun@outlook.com</a></span>
-                    <img style="width: 100%;margin-left: auto;" src="./pdf_images/12412423435345345.png" alt="">
-                </p>
-            </div>
+        <div class="section">
+            <div class="section-title">使いかた</div>
+            <div class="content-line">① 反射板の保護フィルムを剥がし、45°の角度でボックス内にセットしてください（下図をご参照ください）。</div>
+            <div class="content-line">② Google Chromeブラウザで、下記のURLにアクセスしてください。</div>
+            <div class="url-line">https://petmanage.paoxiaokeji.com/petApp</div>
+            <div class="content-line">③ ログイン後、画面の案内に従って基本情報を入力し、登録を完了してください。</div>
+            <div class="content-line">④ 「ホログラム投影」をタップします。</div>
+            <div class="content-line">⑤ アクティベーションコードを入力してください。</div>
+            <div class="content-line">⑥ 「プレビュー画像生成」をタップします。</div>
+            <div class="content-line">⑦ 「生成」をタップし、表示される案内に従って、お好みのペットの写真を選んでください。</div>
+            <div class="content-line">⑧ 生成が完了しましたら、スマートフォンの画面を下にして、ボックス上部に設置してください。</div>
+            <div class="content-line">自動的に投影が開始されます。</div>
         </div>
 
+        <div class="section">
+            <div class="section-title">ご注意ください</div>
+            <div class="bullet-point">すべての機能をお楽しみいただくには、マイクおよびモーションセンサーをオンにしてください。</div>
+            <div class="bullet-point">星空カードが1枚付属しており、投影時の背景としてご使用いただけます。ボックス内に設置してご利用ください。</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">アクティベーションコードについて</div>
+            <div class="bullet-point">1つのコードにつき、登録できるペットは1匹です。</div>
+            <div class="bullet-point">複数のペットを同時に投影する場合は、追加のアクティベーションコードをご用意ください。</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">図の説明</div>
+            <div class="bullet-point">反射板の設置角度（45°に傾けてください）</div>
+            <img src="./pdf_images/2345345345.png" alt="" class="small-image">
+            <div class="bullet-point">タッチ操作エリア</div>
+            <img src="./pdf_images/243234234.png" alt="" class="small-image">
+            <div class="bullet-point">投影するとこんな感じ</div>
+            <img src="./pdf_images/5555555.png" alt="" class="small-image">
+            <div class="contact-text">ご不明な点がございましたら、下記のメールアドレスまでお問い合わせください。<a href="mailto:jiuwanliyun@outlook.com"
+                    class="contact-email">jiuwanliyun@outlook.com</a></div>
+            <img src="./pdf_images/12412423435345345.png" alt="" class="image-display">
+        </div>
     </div>
 </body>
 

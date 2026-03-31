@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ホログラムペットボックス 取扱説明書</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -13,23 +18,34 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans GB', 'Noto Sans JP', 'Meiryo', sans-serif;
+            font-family: 'Noto Serif JP', 'Hiragino Mincho ProN', 'Yu Mincho', 'MS Mincho', serif;
             background: white;
             color: #000;
             font-size: 12pt;
             line-height: 1.7;
+            letter-spacing: 0.08em;
         }
 
         .container {
             max-width: 100%;
-            padding: 40px 50px;
+            padding: 40px 30px;
+            padding-bottom: 0;
         }
 
         .title {
-            font-size: 13pt;
-            font-weight: bold;
+            font-family: 'Noto Serif JP', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+            font-size: .85em;
+            font-weight: 700;
             margin-bottom: 40px;
             text-align: center;
+            letter-spacing: 0.05em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .title img {
+            width: 30px;
         }
 
         .section {
@@ -37,12 +53,14 @@
         }
 
         .section-title {
+            font-family: 'Noto Serif JP', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
             font-size: 13pt;
-            font-weight: bold;
+            font-weight: 600;
             margin-bottom: 20px;
             line-height: 1.8;
-            border-top: 2px solid #000;
+            border-top: 1.5px solid #868686;
             padding-top: 15px;
+            letter-spacing: 0.3em;
         }
 
         .section-title::before {
@@ -51,16 +69,20 @@
         }
 
         .content-line {
-            margin-bottom: 10px;
+            margin-bottom: 30px;
             line-height: 1.7;
             font-size: 12pt;
+            letter-spacing: 3px;
         }
 
         .url-line {
-            margin-bottom: 15px;
+            margin-bottom: 30px;
             color: #000080;
             word-break: break-all;
-            font-size: 12pt;
+            font-size: 10pt;
+            letter-spacing: 0;
+            font-style: italic;
+            font-weight: 600;
         }
 
         .image-display {
@@ -72,12 +94,12 @@
         .small-image {
             width: auto;
             max-width: 300px;
-            margin: 20px auto;
+            margin: 0px auto;
             display: block;
         }
 
         .bullet-point {
-            margin-bottom: 10px;
+            margin-bottom: 30px;
             line-height: 1.7;
             font-size: 12pt;
             padding-left: 20px;
@@ -94,12 +116,17 @@
             font-size: 12pt;
             line-height: 1.7;
             margin-bottom: 15px;
+            color: #6d6da2;
         }
 
         .contact-email {
             color: #000080;
             text-decoration: underline;
             word-break: break-all;
+            font-size: 10pt;
+            letter-spacing: 0;
+            font-style: italic;
+            font-weight: 600;
         }
 
         @media print {
@@ -116,22 +143,25 @@
 
 <body>
     <div class="container">
-        <div class="title">ホログラムペットボックス 取扱説明書</div>
+        <div class="title">
+            <img src="./pdf_images/234234234234.png" alt="">
+            ホログラムペットボックス 取扱説明書
+            <img src="./pdf_images/234234234234.png" alt="">
+        </div>
 
         <img src="pdf_images/123123123123.png" alt="" class="image-display">
 
         <div class="section">
             <div class="section-title">使いかた</div>
             <div class="content-line">① 反射板の保護フィルムを剥がし、45°の角度でボックス内にセットしてください（下図をご参照ください）。</div>
-            <div class="content-line">② Google Chromeブラウザで、下記のURLにアクセスしてください。</div>
+            <div class="content-line" style="margin: 0;">② Google Chromeブラウザで、下記のURLにアクセスしてください:</div>
             <div class="url-line">https://petmanage.paoxiaokeji.com/petApp</div>
             <div class="content-line">③ ログイン後、画面の案内に従って基本情報を入力し、登録を完了してください。</div>
             <div class="content-line">④ 「ホログラム投影」をタップします。</div>
             <div class="content-line">⑤ アクティベーションコードを入力してください。</div>
             <div class="content-line">⑥ 「プレビュー画像生成」をタップします。</div>
             <div class="content-line">⑦ 「生成」をタップし、表示される案内に従って、お好みのペットの写真を選んでください。</div>
-            <div class="content-line">⑧ 生成が完了しましたら、スマートフォンの画面を下にして、ボックス上部に設置してください。</div>
-            <div class="content-line">自動的に投影が開始されます。</div>
+            <div class="content-line">⑧ 生成が完了しましたら、スマートフォンの画面を下にして、ボックス上部に設置してください。自動的に投影が開始されます。</div>
         </div>
 
         <div class="section">
@@ -148,14 +178,15 @@
 
         <div class="section">
             <div class="section-title">図の説明</div>
-            <div class="bullet-point">反射板の設置角度（45°に傾けてください）</div>
-            <img src="./pdf_images/2345345345.png" alt="" class="small-image">
-            <div class="bullet-point">タッチ操作エリア</div>
+            <div class="bullet-point" style="margin-bottom: 0px;">反射板の設置角度（45°に傾けてください）</div>
+            <img style="max-width: 240px;" src="./pdf_images/2345345345.png" alt="" class="small-image">
+            <div class="bullet-point" style="margin-bottom: 10px;">タッチ操作エリア</div>
             <img src="./pdf_images/243234234.png" alt="" class="small-image">
-            <div class="bullet-point">投影するとこんな感じ</div>
+            <div class="bullet-point" style="margin-bottom: 10px;">投影するとこんな感じ</div>
             <img src="./pdf_images/5555555.png" alt="" class="small-image">
-            <div class="contact-text">ご不明な点がございましたら、下記のメールアドレスまでお問い合わせください。<a href="mailto:jiuwanliyun@outlook.com"
-                    class="contact-email">jiuwanliyun@outlook.com</a></div>
+            <div style="margin: 0;border-top: 1.5px solid #868686;" class="contact-text">
+                ご不明な点がございましたら、下記のメールアドレスまでお問い合わせください。</div>
+            <a href="mailto:jiuwanliyun@outlook.com" class="contact-email">jiuwanliyun@outlook.com</a>
             <img src="./pdf_images/12412423435345345.png" alt="" class="image-display">
         </div>
     </div>
